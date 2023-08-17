@@ -7,7 +7,11 @@ const Navbar = () => {
 
   return (
     <nav className='flex w-full py-6 navbar justify-between items-center'>
-      <img className='w-[124px] h-[32px]' src={logo} alt='hoobank' />
+      <img 
+        className='w-[124px] h-[32px] cursor-pointer' 
+        src={logo} alt='hoobank' 
+        onClick={() => scrollY(0,0)}  
+      />
 
       <ul className='list-none hidden justify-end items-center flex-1 sm:flex gap-10'>
         {navLinks.map((nav, index) => (
