@@ -10,7 +10,7 @@ const Navbar = () => {
       <img 
         className='w-[124px] h-[32px] cursor-pointer' 
         src={logo} alt='hoobank' 
-        onClick={() => scrollY(0,0)}  
+        onClick={() => window.scrollY(0,0)}  
       />
 
       <ul className='list-none hidden justify-end items-center flex-1 sm:flex gap-10'>
